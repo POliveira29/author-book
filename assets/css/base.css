@@ -1,0 +1,36 @@
+/* Base.css */
+
+:root {
+    --clr-primary: #fff;
+    --clr-secondary: #2f56a5;
+    --clr-terciary: #8fafcf;
+    --fnt-title: 'Oswald', sans-serif;
+    --fnt-title2: 'Roboto Slab', serif;
+    --fnt-content: 'Libre Baskerville', serif;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-family: var(--fnt-title);
+    font-size: 18px;
+    letter-spacing: 0.1rem;
+    border-radius: 32px;
+    background-color: var(--clr-secondary);
+    color: var(--clr-primary);
+}
+
+.title {
+    font-family: var(--fnt-title);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--clr-primary);
+}
+
+.description {
+    margin: 1rem 0;
+    font-family: var(--fnt-content);
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--clr-primary);
+}

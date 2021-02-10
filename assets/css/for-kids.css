@@ -1,0 +1,35 @@
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(/assets/img/index-banner-right.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.sign-up {
+    background-image: linear-gradient(to right bottom, #3963af, #3f69b7, #446fbe, #4a76c6, #4f7cce);
+}
+
+.sign-up__btn {
+    background-color: #6cb743;
+}
+
+.book-highlight__content {
+    background-image: linear-gradient(to right top, #007cba, #007cba);
+}
+
+.book-highlight__text {
+    background: url(/assets/img/kids-section-bg.png) no-repeat;
+}
+
+.book-week__content {
+    background-image: url(/assets/img/kids-section-bg2.png);
+}
+
+.new-releases__carrousel::before,
+.coming-soon__carrousel::before {
+    background: url(/assets/img/kids-section-bg1.png) no-repeat center;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero__top {
+        background-color: #6cb743;
+    }
+}

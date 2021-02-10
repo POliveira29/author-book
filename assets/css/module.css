@@ -1,0 +1,374 @@
+:root {
+    --clr-primary: #fff;
+    --clr-secondary: #2f56a5;
+    --clr-terciary: #8fafcf;
+    --fnt-title: 'Oswald', sans-serif;
+    --fnt-title2: 'Roboto Slab', serif;
+    --fnt-content: 'Libre Baskerville', serif;
+}
+
+
+/* Header.css */
+
+.hero {
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(/assets/img/hero-mobile.png) no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+.hero__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    height: 20%;
+}
+
+.hero__nav-social {
+    display: none;
+}
+
+.hero__hamburger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 45px;
+    height: 30px;
+}
+
+.hero-navbar__menu-toggle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 1rem;
+}
+
+.hero-navbar__menu-toggle,
+.hero-navbar__menu-toggle::before,
+.hero-navbar__menu-toggle::after {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    background-color: var(--clr-primary);
+}
+
+.hero-navbar__menu-toggle::before {
+    bottom: 0.6rem;
+}
+
+.hero-navbar__menu-toggle::after {
+    top: 0.6rem;
+}
+
+.hero__navbar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    z-index: 1;
+    transform: translateY(-100%);
+    transition: transform 0.3s linear;
+}
+
+.hero-navbar__items {
+    font-family: var(--fnt-title);
+    font-size: 18px;
+}
+
+.navbar-item {
+    padding: 1rem;
+    text-transform: uppercase;
+    border-top: 1px solid #fff;
+    background-color: var(--clr-terciary);
+}
+
+.navbar-item-highlight {
+    padding: 1rem;
+    text-transform: lowercase;
+    background-color: var(--clr-primary);
+}
+
+.navbar-item-highlight a {
+    font-family: var(--fnt-title2);
+    color: var(--clr-secondary);
+}
+
+.hero__branding {
+    font-family: var(--fnt-title);
+    text-transform: uppercase;
+    color: var(--clr-terciary);
+}
+
+.hero__search {
+    position: relative;
+    display: flex;
+}
+
+.hero__search-input {
+    width: 0px;
+    height: 20px;
+    padding: 1.188rem 0;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    background-color: transparent;
+    color: #FFF;
+}
+
+.hero__search-input:focus {
+    box-shadow: 0px 0px 10px 0px #fff;
+}
+
+.hero__search-input::placeholder {
+    font-weight: 600;
+    color: var(--clr-primary);
+}
+
+.hero__search-btn {
+    width: 57px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background: #FFF;
+    color: #8fafcf;
+}
+
+
+/* Main.css */
+
+.sign-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-content: space-between;
+    height: 50vh;
+    background-color: var(--clr-terciary);
+}
+
+.sign-up__description {
+    width: 60%;
+    font-family: var(--fnt-content);
+    color: var(--clr-primary);
+}
+
+.sign-up__box {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 18vh;
+}
+
+.sign-up__input-email {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+}
+
+.sign-up__btn {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.sign-up__advisor {
+    font-family: var(--fnt-title);
+    color: var(--clr-primary);
+}
+
+.book-highlight {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.book-highlight__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    background-image: linear-gradient(to right top, #e33625, #ff2f1b);
+}
+
+.book-highlight__text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-between;
+    height: 50%;
+    text-align: right;
+    background: url(/assets/img/section-bg1-mobile.jpg) center;
+    background-size: cover;
+}
+
+.book-week__video {
+    border: none;
+}
+
+.book-week__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-image: linear-gradient(to bottom, rgba(47, 86, 165, 0.7), rgba(47, 86, 165, 0.7)), url(/assets/img/section-bg2-mobile.jpg);
+}
+
+.book-title {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.book-content__synopsis {
+    margin: 2rem 0;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+.new-releases,
+.coming-soon {
+    font-family: var(--fnt-title);
+}
+
+.new-releases__text {
+    text-align: left;
+    background-color: #F3B527;
+}
+
+.quote {
+    margin: 2rem 0;
+}
+
+.author {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--clr-secondary);
+}
+
+.new-releases__carrousel,
+.coming-soon__carrousel {
+    position: relative;
+    overflow: auto;
+}
+
+.new-releases__carrousel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/img/new-release-bg.jpg) no-repeat center;
+    background-size: cover;
+    filter: blur(8px);
+}
+
+.carrousel-item {
+    position: relative;
+}
+
+.carrousel-btn {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.release-date {
+    color: var(--clr-primary);
+}
+
+.carrousel-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 0;
+    bottom: 22rem;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, .5);
+}
+
+.pri-arrow-left::before,
+.sec-arrow-left::before {
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.pri-arrow-right::before,
+.sec-arrow-right::before {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.coming-soon__text {
+    text-align: right;
+    background-color: #0a95b8;
+}
+
+.coming-soon__carrousel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/img/new-release-bg.jpg) no-repeat center;
+    background-size: cover;
+    filter: blur(8px);
+}
+
+
+/* Footer.css */
+
+.footer {
+    font-family: var(--fnt-title);
+    background: #686868;
+}
+
+.footer__title {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.footer__nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    column-gap: 0.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+
+.footer-principal {
+    text-transform: uppercase;
+}
+
+.footer-principal>li,
+.footer-container>li {
+    padding-bottom: 0.5rem;
+}
+
+.navItem-page-highlight {
+    padding: 0.2rem 0.5rem;
+    font-family: var(--fnt-title2);
+    font-size: 0.8rem;
+    text-transform: lowercase;
+    border-radius: 16px;
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
+}
+
+.navItem-highlight {
+    text-transform: uppercase;
+}
+
+.footer__copyright {
+    text-align: center;
+    color: #BBB;
+}
