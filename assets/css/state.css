@@ -87,7 +87,7 @@
     .hero__search-input {
         width: 105px;
         height: 20px;
-        padding: 1.188rem 0;
+        padding: 1.1rem 0.5rem;
         border: 1px solid #FFF;
         border-right: none;
         border-radius: 5px 0 0 5px;
