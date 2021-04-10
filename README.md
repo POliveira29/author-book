@@ -18,3 +18,5 @@ Feito com base no site [James Patterson](https://www.jamespatterson.com/?utm_sou
 ## Utilitários
 
 - Fontes:  [Libre Baskerville](https://fonts.google.com/specimen/Libre+Baskerville),  [Roboto](https://fonts.google.com/specimen/Roboto),  [Sacramento](https://fonts.google.com/specimen/Sacramento),  [Oswald](https://fonts.google.com/specimen/Oswald)
+
+- Icone: [Favicon](https://www.flaticon.com/)
